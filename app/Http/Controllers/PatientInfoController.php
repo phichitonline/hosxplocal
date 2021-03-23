@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PatientInfoController extends Controller
 {
@@ -14,9 +15,13 @@ class PatientInfoController extends Controller
     public function index(Request $request)
     {
         $patient_hn = $request->hn;
+        $patient_data= DB::connection('mysql_hos')->select('
+        SELECT * FROM patient WHERE hn = "'.$patient_hn.'"
+        ');
 
-        return view('patientinfo', [
+        return view('checkup', [
             'patient_hn' => $patient_hn,
+            'patient_data' => $patient_data,
         ]);
     }
 

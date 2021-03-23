@@ -4,12 +4,12 @@
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="au theme template">
-    <meta name="author" content="Hau Nguyen">
-    <meta name="keywords" content="au theme template">
+    <meta name="description" content="https://www.tphcp.go.th">
+    <meta name="author" content="Dr.GHOST">
+    <meta name="keywords" content="โรงพยาบาล, สมเด็จพระยุพราช, ตะพานหิน">
 
     <!-- Title Page-->
-    <title>Dashboard 3</title>
+    <title>Checkup</title>
 
     <!-- Fontfaces CSS-->
     <link href="{{ URL('css/font-face.css') }}" rel="stylesheet" media="all">
@@ -316,8 +316,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="title-4">{{ $pt_name  }}
-                                    <span> HN : {{ $patient_hn }}</span>
+                                <h1 class="title-4">โปรแกรมตรวจสุขภาพ
+                                    <span> รักษ์ชีวา</span>
                                 </h1>
                                 <hr class="line-seprate">
                             </div>
@@ -325,51 +325,6 @@
                     </div>
                 </section>
                 <!-- END WELCOME-->
-
-                <!-- STATISTIC-->
-                <section class="statistic statistic2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-3">
-                                <div class="statistic__item statistic__item--green">
-                                    <h2 class="number">{{ $pt_cid }}</h2>
-                                    <span class="desc">{{ $pt_name  }}</span>
-                                    <div class="icon">
-                                        <i class="zmdi zmdi-account-o"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="statistic__item statistic__item--orange">
-                                    <h2 class="number">388,688</h2>
-                                    <span class="desc">items sold</span>
-                                    <div class="icon">
-                                        <i class="zmdi zmdi-shopping-cart"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="statistic__item statistic__item--blue">
-                                    <h2 class="number">1,086</h2>
-                                    <span class="desc">this week</span>
-                                    <div class="icon">
-                                        <i class="zmdi zmdi-calendar-note"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3">
-                                <div class="statistic__item statistic__item--red">
-                                    <h2 class="number">$1,060,386</h2>
-                                    <span class="desc">total earnings</span>
-                                    <div class="icon">
-                                        <i class="zmdi zmdi-money"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- END STATISTIC-->
 
                 <!-- MAIN CONTENT-->
                 <section class="p-t-20">
@@ -380,7 +335,9 @@
                                             <div class="au-card-title" style="background-image:url('images/bg-title-02.jpg');">
                                                 <div class="bg-overlay bg-overlay--blue"></div>
                                                 <h3>
-                                                    <i class="zmdi zmdi-comment-text"></i>New Messages</h3>
+                                                    <i class="zmdi zmdi-comment-text"></i>
+                                                    {{ $pt_name  }} <span> HN : {{ $patient_hn }}</span>
+                                                </h3>
                                                 <button class="au-btn-plus">
                                                     <i class="zmdi zmdi-plus"></i>
                                                 </button>
