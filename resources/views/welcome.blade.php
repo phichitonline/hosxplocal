@@ -12,38 +12,18 @@
 
             <!-- PAGE CONTENT-->
             <div class="page-content--bgf7">
-                <!-- BREADCRUMB-->
-                <section class="au-breadcrumb2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="au-breadcrumb-content">
-                                    <div class="au-breadcrumb-left">
-                                        <span class="au-breadcrumb-span">HN:</span>
-                                        <ul class="list-unstyled list-inline au-breadcrumb__list">
-                                            <li class="list-inline-item active">
-                                                <a href="#">{{ $patient_hn }}</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- END BREADCRUMB-->
 
                 <!-- WELCOME-->
                 <section class="welcome p-t-10">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
+                                <br>
                                 <h1 class="title-4">ชื่อผู้รับบริการ :
                                     <span>{{ $pt_name  }}</span>
                                 </h1>
-                                <h3 class="title-4">Note :
-                                    <span>xxx</span>
+                                <h3 class="title-4">HN :
+                                    <span>{{ $patient_hn }}</span>
                                 </h3>
                                 <hr class="line-seprate">
                             </div>
