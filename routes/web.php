@@ -14,11 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('profile', [UserController::class, 'show'])->middleware('auth');
+// Route::get('/','HomeController@index');
 
-Route::get('patientinfo', [PatientInfoController::class, 'index'])->name('patientinfo');
+Route::get('/', [PatientInfoController::class, 'index'])->name('dashboard');
+Route::get('checkup', [PatientInfoController::class, 'checkup'])->name('checkup');
+
+// Route::get('patientinfo', [PatientInfoController::class, 'index'])->name('patientinfo');
 

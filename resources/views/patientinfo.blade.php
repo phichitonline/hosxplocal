@@ -335,7 +335,7 @@
                                     <h2 class="number">{{ $pt_cid }}</h2>
                                     <span class="desc">{{ $pt_name  }}</span>
                                     <div class="icon">
-                                        <i class="zmdi zmdi-account-o"></i>
+                                        <i class="zmdi zmdi-account-calendar"></i>
                                     </div>
                                 </div>
                             </div>

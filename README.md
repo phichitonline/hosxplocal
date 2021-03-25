@@ -9,7 +9,7 @@
 
 ## Download
 
-ดาวน์โหลดตัวติดตั้ง Full version [download](https://www.tphcp.go.th) แล้วให้อับเดตจาก Git นะครับ
+ดาวน์โหลดตัวติดตั้ง Full version [download](https://drive.google.com/file/d/1hXtKSVUVkmg7D1Ze2xaU7RCtRQVr2hVg/view?usp=sharing) แล้วให้อับเดตจาก Git นะครับ
 
 
 ## License
