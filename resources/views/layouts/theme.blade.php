@@ -74,7 +74,7 @@
                                         <span class="bot-line"></span>โปรแกรมอื่นๆ</a>
                                     <ul class="header3-sub-list list-unstyled">
                                         <li>
-                                            <a href="#">HDC DataExchange</a>
+                                            <a target="_blank" href="http://hdcex.bmnhos.com/index.php/dmht/onepagencd?cid={{ $patient_cid }}">HDC DataExchange</a>
                                         </li>
                                         <li>
                                             <a href="#">NCD Data</a>
