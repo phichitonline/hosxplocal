@@ -35,9 +35,13 @@ class PatientInfoController extends Controller
         $patient_data= DB::connection('mysql_hos')->select('
         SELECT * FROM patient WHERE hn = "'.$patient_hn.'"
         ');
+        foreach($patient_data as $data){
+            $patient_cid = $data->cid;
+        }
 
         return view('checkup', [
             'patient_hn' => $patient_hn,
+            'patient_cid' => $patient_cid,
             'patient_data' => $patient_data,
         ]);
     }
