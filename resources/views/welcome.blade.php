@@ -48,10 +48,10 @@
                                 </a>
                             </div>
                             <div class="col-md-6 col-lg-3">
-                            <a class="col-md-12 col-lg-12" href="#">
+                            <a class="col-md-12 col-lg-12" href="http://hdcex.bmnhos.com/index.php/dmht/onepagencd?cid={{ $patient_cid }}">
                                 <div class="statistic__item statistic__item--orange">
-                                    <h2 class="number">อื่นๆ</h2>
-                                    <span class="desc">...</span>
+                                    <h2 class="number">HDC Data Exchange</h2>
+                                    <span class="desc"> </span>
                                     <div class="icon">
                                         <i class="zmdi zmdi-shopping-cart"></i>
                                     </div>
@@ -61,8 +61,8 @@
                             <div class="col-md-6 col-lg-3">
                             <a class="col-md-12 col-lg-12" href="#">
                                 <div class="statistic__item statistic__item--blue">
-                                    <h2 class="number">อื่นๆ</h2>
-                                    <span class="desc">...</span>
+                                    <h2 class="number">NCD Data</h2>
+                                    <span class="desc"> </span>
                                     <div class="icon">
                                         <i class="zmdi zmdi-calendar-note"></i>
                                     </div>

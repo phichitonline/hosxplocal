@@ -15,14 +15,12 @@
                 <!-- WELCOME-->
                 <section class="welcome p-t-10">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <br>
-                                <h1 class="title-4">โปรแกรมตรวจสุขภาพ
-                                    <span> รักษ์ชีวา</span>
-                                </h1>
-                                <hr class="line-seprate">
-                            </div>
+                        <div class="au-card-title" style="background-image:url('{{ URL('images/bg-title-02.jpg') }}');">
+                            <div class="bg-overlay bg-overlay--green"></div>
+                            <h3>
+                                <i class="zmdi zmdi-account-calendar"></i>
+                                โปรแกรมตรวจสุขภาพรักษ์ชีวา
+                            </h3>
                         </div>
                     </div>
                 </section>
@@ -54,7 +52,7 @@
                                                         </p>
                                                     </div>
                                                     <div class="au-message-list">
-                                                        <div class="au-message__item unread">
+                                                        {{-- <div class="au-message__item unread">
                                                             <div class="au-message__item-inner">
                                                                 <div class="au-message__item-text">
                                                                     <div class="avatar-wrap">
@@ -71,44 +69,82 @@
                                                                     <span>12 Min ago</span>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> --}}
+
                                                         <div class="au-message__item unread">
                                                             <div class="au-message__item-inner">
                                                                 <div class="au-message__item-text">
                                                                     <div class="avatar-wrap online">
                                                                         <div class="avatar">
-                                                                            <img src="{{ URL('images/icon/avatar-03.jpg') }}" alt="Nicholas Martinez">
+                                                                            <img src="{{ URL('images/icon/avatar-03.jpg') }}" alt="">
                                                                         </div>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <h5 class="name">Nicholas Martinez</h5>
-                                                                        <p>You are now connected on message</p>
+                                                                        <h5 class="name">ตรวจร่างกายโดยแพทย์</h5>
+                                                                        <p>รายละเอียด</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="au-message__item-time">
-                                                                    <span>11:00 PM</span>
+                                                                    <span>การแปลผล</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="au-message__item unread">
+                                                        <div class="au-message__item">
                                                             <div class="au-message__item-inner">
                                                                 <div class="au-message__item-text">
                                                                     <div class="avatar-wrap online">
                                                                         <div class="avatar">
-                                                                            <img src="{{ URL('images/icon/avatar-04.jpg') }}" alt="Michelle Sims">
+                                                                            <img src="{{ URL('images/icon/avatar-03.jpg') }}" alt="">
                                                                         </div>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <h5 class="name">Michelle Sims</h5>
-                                                                        <p>Lorem ipsum dolor sit amet</p>
+                                                                        <h5 class="name">ตรวจวัดความดันโลหิตและชีพจร</h5>
+                                                                        <p>รายละเอียด</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="au-message__item-time">
-                                                                    <span>Yesterday</span>
+                                                                    <span>การแปลผล</span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="au-message__item unread">
+                                                        <div class="au-message__item">
+                                                            <div class="au-message__item-inner">
+                                                                <div class="au-message__item-text">
+                                                                    <div class="avatar-wrap online">
+                                                                        <div class="avatar">
+                                                                            <img src="{{ URL('images/icon/avatar-03.jpg') }}" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="text">
+                                                                        <h5 class="name">ตรวจหมู่เลือด (A,AB,B,O)</h5>
+                                                                        <p>รายละเอียด</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="au-message__item-time">
+                                                                    <span>การแปลผล</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="au-message__item">
+                                                            <div class="au-message__item-inner">
+                                                                <div class="au-message__item-text">
+                                                                    <div class="avatar-wrap online">
+                                                                        <div class="avatar">
+                                                                            <img src="{{ URL('images/icon/avatar-03.jpg') }}" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="text">
+                                                                        <h5 class="name">ตรวจความสมบูรณ์ของเม็ดเลือดและเกล็ดเลือด</h5>
+                                                                        <p>รายละเอียด</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="au-message__item-time">
+                                                                    <span>การแปลผล</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        {{-- <div class="au-message__item disable js-load-item">
                                                             <div class="au-message__item-inner">
                                                                 <div class="au-message__item-text">
                                                                     <div class="avatar-wrap">
@@ -125,43 +161,7 @@
                                                                     <span>Sunday</span>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="au-message__item unread js-load-item">
-                                                            <div class="au-message__item-inner">
-                                                                <div class="au-message__item-text">
-                                                                    <div class="avatar-wrap online">
-                                                                        <div class="avatar">
-                                                                            <img src="{{ URL('images/icon/avatar-04.jpg') }}" alt="Michelle Sims">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="text">
-                                                                        <h5 class="name">Michelle Sims</h5>
-                                                                        <p>Lorem ipsum dolor sit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="au-message__item-time">
-                                                                    <span>Yesterday</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="au-message__item disable js-load-item">
-                                                            <div class="au-message__item-inner">
-                                                                <div class="au-message__item-text">
-                                                                    <div class="avatar-wrap">
-                                                                        <div class="avatar">
-                                                                            <img src="{{ URL('images/icon/avatar-05.jpg') }}" alt="Michelle Sims">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="text">
-                                                                        <h5 class="name">Michelle Sims</h5>
-                                                                        <p>Purus feugiat finibus</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="au-message__item-time">
-                                                                    <span>Sunday</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        </div> --}}
                                                     </div>
                                                     <div class="au-message__footer">
                                                         <button class="au-btn au-btn-load js-load-btn">แสดงทั้งหมด</button>
