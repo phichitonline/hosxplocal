@@ -14,13 +14,21 @@ class DashboardController extends Controller
      */
     public function index(Request $request)
     {
-        $patient_hn = $request->hn;
+        if ($request->hn || NULL) {
+            $patient_hn = $request->hn;
+        } else {
+            $patient_hn = "000114675";
+        }
         $patient_data= DB::connection('mysql_hos')->select('
         SELECT * FROM patient WHERE hn = "'.$patient_hn.'"
         ');
+        foreach($patient_data as $data){
+            $patient_cid = $data->cid;
+        }
 
         return view('welcome', [
             'patient_hn' => $patient_hn,
+            'patient_cid' => $patient_cid,
             'patient_data' => $patient_data,
         ]);
     }

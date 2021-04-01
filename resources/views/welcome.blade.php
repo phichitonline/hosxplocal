@@ -37,7 +37,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 col-lg-3">
-                            <a class="col-md-12 col-lg-12" href="checkup/?hn={{ $patient_hn }}">
+                            <a class="col-md-12 col-lg-12" href="/checkup/?hn={{ $patient_hn }}">
                                 <div class="statistic__item statistic__item--green">
                                     <h2 class="number">ตรวจสุขภาพ</h2>
                                     <span class="desc">บันทึกสรุปผลการตรวจสุขภาพ</span>

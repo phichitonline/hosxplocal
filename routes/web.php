@@ -1,6 +1,8 @@
 <?php
 
-use App\Http\Controllers\PatientInfoController;
+namespace App\Http\Controllers;
+// use App\Http\Controllers\PatientInfoController;
+// use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,10 +20,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-// Route::get('/','HomeController@index');
-
 Route::get('/', [PatientInfoController::class, 'index'])->name('dashboard');
 Route::get('checkup', [PatientInfoController::class, 'checkup'])->name('checkup');
-
-// Route::get('patientinfo', [PatientInfoController::class, 'index'])->name('patientinfo');
+Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
