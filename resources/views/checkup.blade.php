@@ -116,7 +116,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <h5 class="name">ตรวจหมู่เลือด (A,AB,B,O)</h5>
+                                                                        <h5 class="name">ตรวจหมู่เลือด (A,B,AB,O)</h5>
                                                                         <p>รายละเอียด</p>
                                                                     </div>
                                                                 </div>
